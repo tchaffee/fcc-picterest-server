@@ -1,0 +1,30 @@
+{
+  "name": "fcc-picterest-server",
+  "version": "0.0.1",
+  "description": "freeCodeCamp Picterest - Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run server",
+    "build": "babel src --out-dir dist --source-maps --retain-lines",
+    "server": "babel-watch -L src/server.js",
+    "test": "node_modules/.bin/cucumber-js test",
+    "debug": "babel-watch src/server.js --inspect"
+  },
+  "author": "Todd Chaffee",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-eslint": "^7.1.1",
+    "babel-watch": "^2.0.6"
+  },
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "body-parser": "^1.17.1",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "express-jwt": "^5.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.9.0",
+    "jsonwebtoken": "^7.3.0"
+  }
+}
